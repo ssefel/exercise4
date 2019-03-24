@@ -18,7 +18,9 @@ function init() {
 
 		var imageString = "";	
 		for(var x = 200; x < 210; x++) {	
-			imageString += "<img src='https://picsum.photos/500/500?image=" + picsum[x].id + "'><p>" + picsum[x].author + "</p>"
+			imageString += "<img src='https://picsum.photos/500/500?image=" + picsum[x].id + "'>"
+			 + '<p>' + '</a>' + '<a href="' + picsum[x].author_url + '">' + picsum[x].author + '</a>' + '</p>'
+			 + '<p>' + '</a>' + '<a href="' + picsum[x].post_url + '">' + 'Link to post' + '</a>' + '</p>'
 		}
 		document.getElementById("gallery").innerHTML = imageString;
 		
